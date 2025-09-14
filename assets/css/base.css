@@ -1,0 +1,70 @@
+/* base.css */
+:root {
+  --primary-color: #00eeff;
+  --secondary-color: #0051ff;
+  --accent-color: #ff00f7;
+  --text-color: #ffffff;
+  --bg-color: #0a0a1f;
+  --bg-gradient: linear-gradient(
+    to bottom,
+    rgba(10, 10, 31, 1),
+    rgba(10, 10, 31, 0.7)
+  );
+  --bg-gradient-reverse: linear-gradient(
+    to bottom,
+    rgba(10, 10, 31, 0.7),
+    rgba(10, 10, 31, 1)
+  );
+  --white: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --neon-glow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color);
+  --accent-glow: 0 0 5px var(--accent-color), 0 0 10px var(--accent-color);
+  --blur: blur(10px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--text-color);
+  background: var(--bg-color);
+  line-height: 1.6;
+  background-attachment: fixed;
+  font-family: "Lato", sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: altroned, sans-serif;
+}
+p,
+q,
+form,
+input,
+button,
+::placeholder {
+  font-family: "Lato", serif;
+}
+section {
+  padding: 1rem 15rem;
+}
+
+button {
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.2);
+}

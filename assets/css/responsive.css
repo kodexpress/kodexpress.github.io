@@ -1,0 +1,71 @@
+/* responsive.css */
+
+/* Responsive Design */
+@media (max-width: 769px) {
+  body {
+    overflow-x: hidden;
+  }
+  section {
+    padding: 0 2rem;
+  }
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 10, 31, 0.95);
+    flex-direction: column;
+    padding: 1rem 0;
+    text-align: center;
+    backdrop-filter: var(--blur);
+    border-bottom: 1px solid rgba(0, 247, 255, 0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+  .hero {
+    padding: 0 2rem;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .about p {
+    margin-bottom: 1rem;
+  }
+
+  .about-content {
+    margin: 0 auto;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: unset;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-content .foo-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .social-links {
+    justify-content: center;
+  }
+}

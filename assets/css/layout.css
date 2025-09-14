@@ -1,0 +1,257 @@
+/* layout.css */
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5%;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 31, 0.7),
+    rgba(10, 10, 31, 0)
+  );
+  backdrop-filter: var(--blur);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 247, 255, 0.2);
+}
+.logo {
+  font-size: 2rem;
+  animation: glowText 0.5s ease-in-out infinite alternate;
+  font-family: neon-spark, sans-sarif;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-family: altroned, sans-serif;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+  box-shadow: var(--neon-glow);
+}
+
+.nav-links a:hover::before,
+.nav-links a:active::before {
+  width: 100%;
+}
+
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  z-index: 2;
+  backdrop-filter: blur(2px);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-color);
+  opacity: 0.5;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  animation: glowText 2s ease-in-out infinite alternate;
+  text-shadow: var(--neon-glow);
+}
+
+.hero p {
+  opacity: 0;
+  animation: fadeInUp 1s ease 0.2s;
+  animation-fill-mode: forwards;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+/* Services Section */
+.services {
+  padding: 5rem 5%;
+  position: relative;
+  z-index: 2;
+  background: var(--bg-gradient-reverse);
+  backdrop-filter: blur(2px);
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* About Section */
+.about {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-gradient);
+  backdrop-filter: blur(2px);
+}
+
+.about-content {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  place-items: start;
+  gap: 4rem;
+  padding: 4rem 0;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+.about-content[data-arabic="true"] {
+  text-align: right;
+}
+.about h2 {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.about p {
+  margin: 1rem 0;
+}
+.about-content .right {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.about-content .right img {
+  object-fit: contain;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+.about-content .right:hover img {
+  transform: scale(1.05);
+}
+/* Contact Section */
+.contact {
+  padding: 1rem 5%;
+  background: var(--bg-color);
+  position: relative;
+  height: 90vh;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  background: var(--bg-gradient);
+  color: var(--text-color);
+  padding: 3rem 5% 1rem;
+  border-top: 1px solid rgba(0, 247, 255, 0.2);
+  z-index: 999;
+  backdrop-filter: blur(3px);
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.footer-content .foo-right {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  justify-content: space-around;
+}
+.foo-right .languages {
+  display: flex;
+  flex-direction: column;
+}
+.foo-right .languages[data-arabic="true"] {
+  width: 200px;
+}
+.foo-right .languages a {
+  color: var(--primary-color);
+}
+
+.footer-section h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+.footer-section h3.foo-logo {
+  font-size: 2rem;
+  font-family: "neon-spark", sans-serif;
+}
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: var(--text-color);
+
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+  text-shadow: var(--neon-glow);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 247, 255, 0.1);
+}

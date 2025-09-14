@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@font-face {
+  /* Logo */
+  font-family: "neon-spark";
+  src: url("../fonts/neon-spark/NeonSpark.otf") format("truetype");
+}
+@font-face {
+  /* used for headings */
+  font-family: "altroned";
+  src: url("../fonts/altroned-trial/ALTRONED-Trial.otf") format("truetype");
+}
+
+@font-face {
+  /* used for glitch */
+  font-family: "sd-glitch";
+  src: url("../fonts/sdglitchdemo/SDGlitch_Demo.ttf") format("truetype");
+}
