@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0a0a1f" />
@@ -8,64 +8,41 @@
       name="description"
       content="Your trusted partner in web development and digital transformation in Algeria, providing innovative solutions to help businesses thrive online with cutting-edge technology and expertise."
     />
+      <!-- Canonical tag added for SEO. Adjust for each page's preferred URL. -->
+    <link rel="canonical" href="https://kodexpress.github.io/" />
+
+      <!-- hreflang tags for multilingual support -->
+    <link rel="alternate" href="https://kodexpress.github.io/" hreflang="en" />
+    <link rel="alternate" href="https://kodexpress.github.io/ar/" hreflang="ar" />
+    <link rel="alternate" href="https://kodexpress.github.io/fr/" hreflang="fr" />
+
     <title>KodexPress - Digital Solutions Agency</title>
 
     <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png" />
     <link rel="manifest" href="./assets/images/site.webmanifest" />
 
     <!-- Stylesheets -->
-    <link
-      rel="stylesheet"
-      defer
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
+    <!-- Place critical CSS here and non-critical with deferred loading -->
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/layout.css" />
     <link rel="stylesheet" href="./assets/css/components.css" />
-    <link
-      rel="stylesheet"
-      href="./assets/css/animations.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link
-      rel="stylesheet"
-      href="./assets/css/responsive.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
 
-    <!-- Prefetching & Preloading -->
-    <link rel="prefetch" href="./assets/css/fonts.css" />
-    <link rel="prefetch" href="./assets/css/base.css" />
-    <link rel="prefetch" href="./assets/css/layout.css" />
-    <!-- <link rel="preload" as="style" href="./assets/css/layout.css" /> -->
-    <link rel="prefetch" href="./assets/css/components.css" />
-    <link rel="prefetch" href="./assets/css/animations.css" />
-    <link rel="prefetch" href="./assets/css/responsive.css" />
+    <!-- Deferred loading for non-critical CSS -->
+    <link rel="stylesheet" href="./assets/css/animations.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" media="print" onload="this.media='all'" />
     <link
-      rel="prefetch"
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      media="print"
+      onload="this.media='all'"
     />
+
+    <!-- Preloading and prefetching (only for non-essential resources) -->
+    <!-- Keep preload only for critical scripts if necessary -->
     <link
       rel="preload"
       as="script"
@@ -73,8 +50,10 @@
     />
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
-  </head>
+    <!-- Add defer attribute to non-critical scripts. Place after CSS. -->
+    <script defer src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
+</head>
+
 
   <body>
     <nav>
